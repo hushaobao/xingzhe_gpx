@@ -1,0 +1,5 @@
+fit-tool==0.9.13
+geopy==2.4.1
+gpxpy==1.6.2
+tqdm==4.67.1
+fake-useragent==2.2.0
