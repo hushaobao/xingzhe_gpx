@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xingzhe-gpx"
+version = "0.1.0"
+description = "Download Xingzhe GPX activities and convert them to FIT"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["requests>=2.31,<3", "gpxpy>=1.6,<2", "geopy>=2.4,<3", "fit-tool>=0.9.15,<1"]
+
+[project.scripts]
+xingzhe-download = "download_xingzhe_gpx:main"
+gpx-to-fit = "gpx2fit:main"
+
+[tool.setuptools]
+py-modules = ["download_xingzhe_gpx", "gpx2fit"]
